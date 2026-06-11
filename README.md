@@ -17,6 +17,7 @@ To predict future Tesla stock prices using:
 Historical stock data
 Deep learning models (RNN & LSTM)
 Feature engineering and time-series analysis
+
 📊 Dataset
 File: TSLA.csv
 Source: Historical Tesla stock price data
@@ -27,6 +28,7 @@ High
 Low
 Close
 Volume
+
 ⚙️ Tech Stack
 Python 🐍
 TensorFlow / Keras 🧠
@@ -35,6 +37,7 @@ Scikit-learn 🔧
 Plotly 📈
 Streamlit 🌐
 Keras Tuner 🔍
+
 🧠 Models Used
 1. SimpleRNN (Baseline Model)
 Used for initial time-series prediction
@@ -42,13 +45,15 @@ Architecture:
 SimpleRNN layers
 Dense layers
 Dropout for regularization
-2. LSTM (Optimized Model)
+
+3. LSTM (Optimized Model)
 Better at learning long-term dependencies
 Tuned using Keras Tuner
 Architecture:
 LSTM layers (100 units)
 Dropout layers
 Dense output layer
+
 🔧 Data Preprocessing
 Converted Date column to datetime
 Sorted data chronologically
@@ -59,6 +64,7 @@ Moving averages (7, 30 days)
 Volatility
 Scaled data using MinMaxScaler
 Created sequences using 60-day window
+
 📦 Model Training
 Input shape: (samples, 60, 1)
 Train/Test split: 80% / 20%
@@ -68,6 +74,7 @@ Callbacks:
 EarlyStopping
 ModelCheckpoint
 ReduceLROnPlateau
+
 📊 Performance Results
 Model	RMSE	MAE	MAPE
 SimpleRNN	~29.45	~18.02	~5.52%
@@ -91,6 +98,7 @@ best_tuned_model.keras
 Run the app using:
 
 streamlit run app.py
+
 Features:
 📌 Real-time stock price visualization
 📊 Moving averages (MA7, MA30, MA90)
@@ -98,6 +106,7 @@ Features:
 📉 Model comparison metrics
 📅 Historical data viewer
 📁 Project Structure
+
 PROJECT-3-LABMENTIX/
 │
 ├── app.py
@@ -111,6 +120,8 @@ PROJECT-3-LABMENTIX/
 ├── lstm_tuning/
 ├── __pycache__/
 └── .venv/
+
+
 📌 Key Concepts Used
 Time Series Forecasting
 LSTM (Long Short-Term Memory Networks)
@@ -132,12 +143,12 @@ Add sentiment analysis (news + Twitter)
 Use Transformer models
 Deploy on cloud (AWS / Streamlit Cloud)
 Add real-time stock API integration
+
 👨‍💻 Author
 
-Your Name
+Abihail Nans Kuiper Y
 
 AI/ML Project
 Deep Learning for Time Series Forecasting
 📜 License
 
-This project is for educational purposes only.
