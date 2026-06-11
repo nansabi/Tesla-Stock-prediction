@@ -1,0 +1,71 @@
+# ======================
+# Python cache
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ======================
+# Virtual Environment
+# ======================
+.venv/
+venv/
+ENV/
+env/
+
+# ======================
+# Jupyter (if used later)
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# TensorFlow / Keras Models
+# (IGNORE trained models)
+# ======================
+*.h5
+*.keras
+*.pb
+saved_model/
+checkpoints/
+*.ckpt
+
+# ======================
+# Keras Tuner output
+# ======================
+lstm_tuning/
+kt_dir/
+tuner_results/
+
+# ======================
+# Logs
+# ======================
+logs/
+*.log
+
+# ======================
+# Streamlit cache
+# ======================
+.streamlit/
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# IDE files
+# ======================
+.vscode/
+.idea/
+
+# ======================
+# Backup files
+# ======================
+*.backup
+
+# ======================
+# Large unnecessary folders
+# ======================
+__pycache__/
